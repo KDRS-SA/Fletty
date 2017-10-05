@@ -1,6 +1,5 @@
 use fletty;
 
-
 DROP TABLE IF EXISTS flettylogg;
 DROP TABLE IF EXISTS brukere;
 DROP TABLE IF EXISTS uttrekk;
@@ -75,7 +74,7 @@ CREATE TABLE flettylogg (
 PRIMARY KEY (logg_id)
  ) engine = InnoDB DEFAULT CHARACTER SET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
- DROP TRIGGER IF EXISTS uttrekk_a_upd;
+DROP TRIGGER IF EXISTS uttrekk_a_upd;
 
 
 DELIMITER //
@@ -96,7 +95,6 @@ DELIMITER ;
 
 DROP TRIGGER IF EXISTS uttrekk_before_delete;
 DELIMITER //
-
 
 
 CREATE TRIGGER uttrekk_before_delete
@@ -125,25 +123,7 @@ BEGIN
 END; //
 
 DELIMITER ;
-
-
-INSERT INTO uttrekk
-		(skjermet,arkivskaper,arkivleder,  status, startDato, sluttDato, saksNR, mottattDATO, forventetAnkomst, system, systemversjon, systemtype,databaseplattform,
-		  etikett, ansvarlig, sistendret)
-		 VALUES
-		 ('ja','Kongsberg','tove', '1: Avtalt', '2001', '2012', '1232134', '2017-02-02', '2017-04-04', 'esa','0.2', 'noark 4','esa',
-		   'esa', 'cecilie', now() );
 		   
-INSERT INTO brukere 
-(brukernavn, passord)
-VALUES 
-('', '');
-
-INSERT INTO brukere 
-(brukernavn, passord)
-VALUES 
-('', '');
-
 INSERT INTO brukere 
 (brukernavn, passord)
 VALUES 

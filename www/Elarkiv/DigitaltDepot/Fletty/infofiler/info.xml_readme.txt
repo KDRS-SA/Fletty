@@ -1,0 +1,5 @@
+info.xml_readme.txt
+
+Dokumentasjon av støttede info.xml dokumenteres under
+
+<kommer>
