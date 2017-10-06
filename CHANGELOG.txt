@@ -1,0 +1,25 @@
+Fletty changelog
+
+### 2017-10-06 TAA https://github.com/KDRS-SA/Fletty
+Implementert rettelse TODO for info.xml automatisk innlasting av informasjon
+- Erstattet hardkoding av sti til info.xml
+- Lagt all informasjon og kode for info.xml opplasting i undermappe /infomal
+- Opprettet Fletty changelog
+- Lagt til Git branch: ikamr-develop
+
+TODO: Opprette setup.php med include_once for overordnede parametere (som oppdatert liste over info.xml maler)
+
+### 2017-10-05 TAA https://github.com/KDRS-SA/Fletty
+Opprettet GitHub fork til KDRS-SA
+- Erstattet README.md med informasjon, installasjons- og brukerveiledning
+- Lagt til php-elementer slik at løsning er kjørbar og selvstendig
+- Databasekobling, oppstartsside m.m.
+- Restrukturert GitHub repository katalogstruktur (nye kataloger www, mysql, doc)
+- Lagt til Git branch: ikamr
+
+TODO: Erstatte hardkoding i sti for info.xml for automatisk innlasting av informasjon
+
+### 2017-08-23 CHR https://github.com/ceciliehrr/Fletty
+GitHub repository opprettet av Cecilie Hansen Rørås, IKA Kongsberg
+- Må endres for å bli selvstendig og kjørbar (databasekobling, oppstartsside m.m.)
+- Git branch: master
